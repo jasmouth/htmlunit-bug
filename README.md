@@ -6,6 +6,15 @@ The purpose of this project is to demonstrate a bug in [HtmlUnit](http://htmluni
 2. Generate the bundle by running the `npm run bundle` command.
 3. Run the provided JUnit test.
 
+## Reproducing the Bug without NPM
+Also included is a copy of the bundled JavaScript file. If unable to use NPM to generate the bundle, you must create the directory `./target/frontend/static/` and place `bundle.js` inside this directory.
+
+# Running the Application
+If you wish to run the application and view it in a browser, simply run the command `mvn spring-boot:run` from the command line, and navigate to `http://localhost:8080` in the browser of your choice.
+
+# Running the JUnit Test
+To run the provided JUnit test, run the `mvn test` command from the command line.
+
 # Description of the Bug
 As the exception thrown by the JUnit test indicates, there is an attempt made to call a non-existing function on an object (the exact message in the exception is: 
 `Caused by: net.sourceforge.htmlunit.corejs.javascript.EcmaError: TypeError: Cannot find function attachEvent in object scroll.`).
