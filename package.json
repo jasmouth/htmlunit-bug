@@ -1,0 +1,23 @@
+{
+	"name": "htmlunit-bug",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"bundle": "rimraf ./target/frontend/static && webpack --bail"
+	},
+	"devDependencies": {
+		"babel-core": "6.24.1",
+		"babel-loader": "7.0.0",
+		"babel-preset-es2015": "6.24.1",
+		"babel-preset-react": "6.24.1",
+		"babel-preset-stage-0": "6.24.1",
+		"rimraf": "2.6.1",
+		"webpack": "1.14.0"
+	},
+	"dependencies": {
+		"react": "15.5.4",
+		"react-dom": "15.5.4",
+		"react-router": "4.1.1",
+		"react-router-dom": "4.1.1"
+	}
+}
